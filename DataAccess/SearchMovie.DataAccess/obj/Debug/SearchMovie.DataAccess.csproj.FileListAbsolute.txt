@@ -1,0 +1,6 @@
+C:\MyProjects\TestProject\SearchMovie\DataAccess\SearchMovie.DataAccess\bin\Debug\SearchMovie.DataAccess.dll
+C:\MyProjects\TestProject\SearchMovie\DataAccess\SearchMovie.DataAccess\bin\Debug\SearchMovie.DataAccess.pdb
+C:\MyProjects\TestProject\SearchMovie\DataAccess\SearchMovie.DataAccess\obj\Debug\SearchMovie.DataAccess.csproj.CoreCompileInputs.cache
+C:\MyProjects\TestProject\SearchMovie\DataAccess\SearchMovie.DataAccess\obj\Debug\SearchMovie.DataAccess.dll
+C:\MyProjects\TestProject\SearchMovie\DataAccess\SearchMovie.DataAccess\obj\Debug\SearchMovie.DataAccess.pdb
+C:\MyProjects\TestProject\SearchMovie\DataAccess\SearchMovie.DataAccess\obj\Debug\SearchMovie.DataAccess.csprojAssemblyReference.cache

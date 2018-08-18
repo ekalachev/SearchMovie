@@ -1,0 +1,12 @@
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\SearchMovie.Service.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\SearchMovie.Service.pdb
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\obj\Debug\SearchMovie.Service.csprojAssemblyReference.cache
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\obj\Debug\SearchMovie.Service.csproj.CoreCompileInputs.cache
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\obj\Debug\SearchMovie.Service.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\obj\Debug\SearchMovie.Service.pdb
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\SearchMovie.IService.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\SearchMovie.Model.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\RestSharp.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\SearchMovie.Model.pdb
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\bin\Debug\SearchMovie.IService.pdb
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.Service\obj\Debug\SearchMovie.Service.csproj.CopyComplete

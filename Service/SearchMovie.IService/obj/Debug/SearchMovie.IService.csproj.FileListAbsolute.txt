@@ -1,0 +1,10 @@
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\bin\Debug\SearchMovie.IService.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\bin\Debug\SearchMovie.IService.pdb
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\bin\Debug\SearchMovie.Model.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\bin\Debug\RestSharp.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\bin\Debug\SearchMovie.Model.pdb
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\obj\Debug\SearchMovie.IService.csprojAssemblyReference.cache
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\obj\Debug\SearchMovie.IService.csproj.CoreCompileInputs.cache
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\obj\Debug\SearchMovie.IService.csproj.CopyComplete
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\obj\Debug\SearchMovie.IService.dll
+C:\MyProjects\TestProject\SearchMovie\Service\SearchMovie.IService\obj\Debug\SearchMovie.IService.pdb
