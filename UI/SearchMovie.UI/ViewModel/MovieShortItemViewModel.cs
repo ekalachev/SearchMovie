@@ -6,20 +6,18 @@ namespace SearchMovie.UI.ViewModel
 {
     public class MovieShortItemViewModel : Observable
     {
-        public MovieShortItemViewModel(MovieShortWrapper movieShortWrapper)
+        public MovieShortItemViewModel()
         {
-            Model = movieShortWrapper;
-
             SelectMovieCommand = new DelegateCommand(OnSelectMovieExecute);
         }
 
-        public MovieShortWrapper Model { get; private set; }
+        public MovieShortWrapper Model { get; set; }
 
-        public ICommand SelectMovieCommand { get; private set; }
+        public ICommand SelectMovieCommand { get; }
 
         private void OnSelectMovieExecute()
         {
-            
+            //TODO open movie page
         }
     }
 }

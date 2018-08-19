@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Core;
 
 namespace SearchMovie.Model.ResultModel
 {

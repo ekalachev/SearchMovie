@@ -1,7 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-using System.Windows.Input;
-using Prism.Commands;
-using Prism.Events;
+using Core;
 using SearchMovie.Model.ResultModel;
 using SearchMovie.UI.Wrapper;
 
@@ -9,7 +7,9 @@ namespace SearchMovie.UI.ViewModel
 {
     public interface ISearchResultViewModel
     {
-        void Show(SearchResult searchResult);
+        void Clear();
+
+        void Show(Option<SearchResult> searchResult);
     }
 
     public class SearchResultViewModel : ISearchResultViewModel
@@ -21,18 +21,24 @@ namespace SearchMovie.UI.ViewModel
 
         public ObservableCollection<MovieShortItemViewModel> MovieItems { get; set; }
 
-        public void Show(SearchResult searchResult)
+        public void Clear()
         {
             MovieItems.Clear();
+        }
 
-            if (searchResult.Response)
+        public void Show(Option<SearchResult> searchResult)
+        {
+            searchResult.Do(result =>
             {
-                foreach (var model in searchResult.Search)
+                if (result.Response)
                 {
-                    var wrapper = new MovieShortWrapper(model);
-                    MovieItems.Add(new MovieShortItemViewModel(wrapper));
+                    foreach (var model in result.Search)
+                    {
+                        var wrapper = new MovieShortWrapper(model);
+                        MovieItems.Add(new MovieShortItemViewModel { Model = wrapper });
+                    }
                 }
-            }
+            });
         }
     }
 }

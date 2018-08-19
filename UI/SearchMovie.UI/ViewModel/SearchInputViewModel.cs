@@ -21,17 +21,19 @@ namespace SearchMovie.UI.ViewModel
             _searchResultModelBuilder = searchResultModelBuilder;
             _searchResultViewModel = searchResultViewModel;
 
-            SearchCommand = new DelegateCommand(OnSearchExecute, OnSearchCanExecute);
+            SearchCommand = new DelegateCommand(OnSearchExecute);
 
             InvalidateCommands();
         }
 
-        public ICommand SearchCommand { get; private set; }
+        public ICommand SearchCommand { get; }
 
         public string SearchText { get; set; }
 
         private void OnSearchExecute()
         {
+            _searchResultViewModel.Clear();
+
             if (!string.IsNullOrWhiteSpace(SearchText))
             {
                 var serarchModel = new SearchModel(SearchText);
@@ -44,11 +46,6 @@ namespace SearchMovie.UI.ViewModel
         private void InvalidateCommands()
         {
             ((DelegateCommand)SearchCommand).RaiseCanExecuteChanged();
-        }
-
-        private bool OnSearchCanExecute()
-        {
-            return true;
         }
     }
 }

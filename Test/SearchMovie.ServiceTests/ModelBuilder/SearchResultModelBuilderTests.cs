@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Core;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SearchMovie.IService.Provider;
 using SearchMovie.IService.RequestBuilder;
 using SearchMovie.Model.Request;
@@ -19,7 +20,7 @@ namespace SearchMovie.UnitTests.ModelBuilder
             var apikey = "c6788679";
             var searchModel = new SearchModel(filmTitle);
             var searchRequest = new SearchRequest(apikey, filmTitle);
-            var searchResult = new SearchResult();
+            var searchResult = Option.Some(new SearchResult());
 
             GetMock<ISearchRequestBuilder>()
                 .Setup(x => x.Build(searchModel))

@@ -31,8 +31,13 @@ namespace SearchMovie.UI.Startup
                 .As<IGatewaySettingsProvider>();
 
             builder.RegisterType<SearchProvider>().As<ISearchProvider>();
+            builder.RegisterType<MovieProvider>().As<IMovieProvider>();
+
             builder.RegisterType<SearchResultModelBuilder>().As<ISearchResultModelBuilder>();
+            builder.RegisterType<MovieModelBuilder>().As<IMovieModelBuilder>();
+
             builder.RegisterType<SearchRequestBuilder>().As<ISearchRequestBuilder>();
+            builder.RegisterType<MovieRequestBuilder>().As<IMovieRequestBuilder>();
 
             builder.RegisterType<SearchInputViewModel>().As<ISearchInputViewModel>().SingleInstance();
             builder.RegisterType<SearchResultViewModel>().As<ISearchResultViewModel>().SingleInstance();

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Request\MovieRequest.cs" />
     <Compile Include="ResultModel\Movie.cs" />
     <Compile Include="ResultModel\MovieShort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,10 +54,17 @@
     <Compile Include="Request\RequestBase.cs" />
     <Compile Include="Request\SearchRequest.cs" />
     <Compile Include="ResultModel\SearchResult.cs" />
+    <Compile Include="Search\MovieIdModel.cs" />
     <Compile Include="Search\SearchModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Core\Core.csproj">
+      <Project>{ECC5B2BA-6627-4B92-94D1-73358EBC91EA}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

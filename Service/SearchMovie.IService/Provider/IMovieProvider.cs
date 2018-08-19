@@ -4,8 +4,8 @@ using SearchMovie.Model.ResultModel;
 
 namespace SearchMovie.IService.Provider
 {
-    public interface ISearchProvider
+    public interface IMovieProvider
     {
-        Option<SearchResult> Execute(IRestRequest request);
+        Option<Movie> Execute(IRestRequest request);
     }
 }

@@ -6,12 +6,12 @@ using SearchMovie.Model.ResultModel;
 
 namespace SearchMovie.Service.Provider
 {
-    public class SearchProvider : ISearchProvider
+    public class MovieProvider : IMovieProvider
     {
         private readonly IRestClient _restClient;
         private readonly IGatewaySettingsProvider _gatewaySettingsProvider;
 
-        public SearchProvider(
+        public MovieProvider(
             IRestClient restClient,
             IGatewaySettingsProvider gatewaySettingsProvider)
         {
@@ -19,15 +19,15 @@ namespace SearchMovie.Service.Provider
             _gatewaySettingsProvider = gatewaySettingsProvider;
         }
 
-        public Option<SearchResult> Execute(IRestRequest request)
+        public Option<Movie> Execute(IRestRequest request)
         {
             _restClient.BaseUrl = new Uri(_gatewaySettingsProvider.Domain);
 
-            var result = _restClient.Execute<SearchResult>(request);
+            var result = _restClient.Execute<Movie>(request);
 
             return result.Data != null
                 ? Option.Some(result.Data)
-                : Option.None<SearchResult>();
+                : Option.None<Movie>();
         }
     }
 }

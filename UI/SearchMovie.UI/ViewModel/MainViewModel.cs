@@ -12,9 +12,9 @@ namespace SearchMovie.UI.ViewModel
             SearchResultViewModel = searchResultViewModel;
         }
 
-        public ISearchInputViewModel SearchInputViewModel { get; private set; }
+        public ISearchInputViewModel SearchInputViewModel { get; }
 
-        public ISearchResultViewModel SearchResultViewModel { get; private set; }
+        public ISearchResultViewModel SearchResultViewModel { get; }
 
         public void OnClosing(CancelEventArgs cancelEventArgs)
         {

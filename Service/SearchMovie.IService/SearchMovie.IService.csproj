@@ -44,16 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelBuilder\IMovieModelBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider\IGatewaySettingsProvider.cs" />
     <Compile Include="ModelBuilder\ISearchResultModelBuilder.cs" />
+    <Compile Include="Provider\IMovieProvider.cs" />
     <Compile Include="Provider\ISearchProvider.cs" />
+    <Compile Include="RequestBuilder\IMovieRequestBuilder.cs" />
     <Compile Include="RequestBuilder\ISearchRequestBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Core\Core.csproj">
+      <Project>{ecc5b2ba-6627-4b92-94d1-73358ebc91ea}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Model\SearchMovie.Model\SearchMovie.Model.csproj">
       <Project>{4A4B34CC-610A-4C4B-8BD7-CC40A3A8874C}</Project>
       <Name>SearchMovie.Model</Name>

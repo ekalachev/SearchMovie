@@ -16,7 +16,7 @@ namespace SearchMovie.UI.Wrapper
             Model = model;
         }
 
-        public T Model { get; private set; }
+        public T Model { get; }
 
         protected TValue GetValue<TValue>([CallerMemberName] string propertyName = null)
         {

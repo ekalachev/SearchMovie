@@ -4,8 +4,8 @@ using SearchMovie.Model.Search;
 
 namespace SearchMovie.IService.ModelBuilder
 {
-    public interface ISearchResultModelBuilder
+    public interface IMovieModelBuilder
     {
-        Option<SearchResult> Build(SearchModel searchModel);
+        Option<Movie> Build(MovieIdModel movieIdModel);
     }
 }

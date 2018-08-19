@@ -80,6 +80,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Core\Core.csproj">
+      <Project>{ECC5B2BA-6627-4B92-94D1-73358EBC91EA}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\DataAccess\SearchMovie.DataAccess\SearchMovie.DataAccess.csproj">
       <Project>{1b335c16-ca4f-442c-9346-369450872e6d}</Project>
       <Name>SearchMovie.DataAccess</Name>
