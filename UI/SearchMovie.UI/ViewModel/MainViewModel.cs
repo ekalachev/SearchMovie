@@ -1,26 +1,24 @@
-﻿using System;
-using System.ComponentModel;
-using Prism.Events;
+﻿using System.ComponentModel;
 
 namespace SearchMovie.UI.ViewModel
 {
     public class MainViewModel : Observable
     {
-        private readonly IEventAggregator _eventAggregator;
-
         public MainViewModel(
-            IEventAggregator eventAggregator)
+            ISearchInputViewModel searchInputViewModel,
+            ISearchResultViewModel searchResultViewModel)
         {
-            _eventAggregator = eventAggregator;
+            SearchInputViewModel = searchInputViewModel;
+            SearchResultViewModel = searchResultViewModel;
         }
 
-        public void Load()
-        {
-        }
+        public ISearchInputViewModel SearchInputViewModel { get; private set; }
+
+        public ISearchResultViewModel SearchResultViewModel { get; private set; }
 
         public void OnClosing(CancelEventArgs cancelEventArgs)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

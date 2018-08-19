@@ -19,7 +19,6 @@ namespace SearchMovie.UI
             _mainViewModel = container.Resolve<MainViewModel>();
             MainWindow = new MainWindow(_mainViewModel);
             MainWindow.Show();
-            _mainViewModel.Load();
         }
     }
 }

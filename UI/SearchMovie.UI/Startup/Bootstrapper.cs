@@ -34,6 +34,8 @@ namespace SearchMovie.UI.Startup
             builder.RegisterType<SearchResultModelBuilder>().As<ISearchResultModelBuilder>();
             builder.RegisterType<SearchRequestBuilder>().As<ISearchRequestBuilder>();
 
+            builder.RegisterType<SearchInputViewModel>().As<ISearchInputViewModel>().SingleInstance();
+            builder.RegisterType<SearchResultViewModel>().As<ISearchResultViewModel>().SingleInstance();
             builder.RegisterType<MainViewModel>().AsSelf();
 
             return builder.Build();
