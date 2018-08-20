@@ -1,8 +1,0 @@
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\bin\Debug\SearchMovie.Model.dll
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\bin\Debug\SearchMovie.Model.pdb
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\obj\Debug\SearchMovie.Model.csprojAssemblyReference.cache
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\obj\Debug\SearchMovie.Model.csproj.CoreCompileInputs.cache
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\obj\Debug\SearchMovie.Model.dll
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\obj\Debug\SearchMovie.Model.pdb
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\bin\Debug\RestSharp.dll
-C:\MyProjects\TestProject\SearchMovie\Model\SearchMovie.Model\obj\Debug\SearchMovie.Model.csproj.CopyComplete
