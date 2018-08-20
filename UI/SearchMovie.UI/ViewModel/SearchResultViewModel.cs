@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using Core;
+using SearchMovie.IService.ModelBuilder;
 using SearchMovie.Model.ResultModel;
 using SearchMovie.UI.Wrapper;
 
@@ -35,7 +36,7 @@ namespace SearchMovie.UI.ViewModel
                     foreach (var model in result.Search)
                     {
                         var wrapper = new MovieShortWrapper(model);
-                        MovieItems.Add(new MovieShortItemViewModel { Model = wrapper });
+                        MovieItems.Add(new MovieShortItemViewModel(wrapper));
                     }
                 }
             });

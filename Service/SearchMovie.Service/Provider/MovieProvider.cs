@@ -15,8 +15,8 @@ namespace SearchMovie.Service.Provider
             IRestClient restClient,
             IGatewaySettingsProvider gatewaySettingsProvider)
         {
-            _restClient = restClient;
-            _gatewaySettingsProvider = gatewaySettingsProvider;
+            _restClient = restClient ?? throw new ArgumentNullException(nameof(restClient));
+            _gatewaySettingsProvider = gatewaySettingsProvider ?? throw new ArgumentNullException(nameof(gatewaySettingsProvider));
         }
 
         public Option<Movie> Execute(IRestRequest request)

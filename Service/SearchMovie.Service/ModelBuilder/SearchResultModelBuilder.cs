@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System;
+using Core;
 using SearchMovie.IService.ModelBuilder;
 using SearchMovie.IService.Provider;
 using SearchMovie.IService.RequestBuilder;
@@ -16,8 +17,8 @@ namespace SearchMovie.Service.ModelBuilder
             ISearchRequestBuilder searchRequestBuilder,
             ISearchProvider searchProvider)
         {
-            _searchRequestBuilder = searchRequestBuilder;
-            _searchProvider = searchProvider;
+            _searchRequestBuilder = searchRequestBuilder ?? throw new ArgumentNullException(nameof(searchRequestBuilder));
+            _searchProvider = searchProvider ?? throw new ArgumentNullException(nameof(searchProvider));
         }
 
         public Option<SearchResult> Build(SearchModel searchModel)

@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using System;
+using RestSharp;
 using SearchMovie.IService.Provider;
 using SearchMovie.IService.RequestBuilder;
 using SearchMovie.Model.Request;
@@ -12,7 +13,7 @@ namespace SearchMovie.Service.RequestBuilder
 
         public MovieRequestBuilder(IGatewaySettingsProvider gatewaySettingsProvider)
         {
-            _gatewaySettingsProvider = gatewaySettingsProvider;
+            _gatewaySettingsProvider = gatewaySettingsProvider ?? throw new ArgumentNullException(nameof(gatewaySettingsProvider));
         }
 
         public IRestRequest Build(MovieIdModel movieIdModel)

@@ -1,13 +1,16 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 using Prism.Commands;
+using SearchMovie.IService.ModelBuilder;
 using SearchMovie.UI.Wrapper;
 
 namespace SearchMovie.UI.ViewModel
 {
     public class MovieShortItemViewModel : Observable
     {
-        public MovieShortItemViewModel()
+        public MovieShortItemViewModel(MovieShortWrapper model)
         {
+            Model = model ?? throw new ArgumentNullException();
             SelectMovieCommand = new DelegateCommand(OnSelectMovieExecute);
         }
 
