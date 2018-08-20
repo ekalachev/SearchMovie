@@ -70,9 +70,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BaseAutoMockedTest.cs" />
+    <Compile Include="ModelBuilder\MovieModelBuilderTests.cs" />
     <Compile Include="ModelBuilder\SearchResultModelBuilderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\MovieProviderTests.cs" />
     <Compile Include="Provider\SearchProviderTests.cs" />
+    <Compile Include="RequestBuilder\MovieRequestBuilderTests.cs" />
     <Compile Include="RequestBuilder\SearchRequestBuilderTests.cs" />
     <Compile Include="Wrapper\MovieShortWrapperTests.cs" />
   </ItemGroup>
